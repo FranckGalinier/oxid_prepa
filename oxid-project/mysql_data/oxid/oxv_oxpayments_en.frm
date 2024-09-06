@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `oxid`.`oxpayments`.`OXID` AS `OXID`,`oxid`.`oxpayments`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxpayments`.`OXDESC_1` AS `OXDESC`,`oxid`.`oxpayments`.`OXADDSUM` AS `OXADDSUM`,`oxid`.`oxpayments`.`OXADDSUMTYPE` AS `OXADDSUMTYPE`,`oxid`.`oxpayments`.`OXADDSUMRULES` AS `OXADDSUMRULES`,`oxid`.`oxpayments`.`OXFROMBONI` AS `OXFROMBONI`,`oxid`.`oxpayments`.`OXFROMAMOUNT` AS `OXFROMAMOUNT`,`oxid`.`oxpayments`.`OXTOAMOUNT` AS `OXTOAMOUNT`,`oxid`.`oxpayments`.`OXVALDESC_1` AS `OXVALDESC`,`oxid`.`oxpayments`.`OXCHECKED` AS `OXCHECKED`,`oxid`.`oxpayments`.`OXLONGDESC_1` AS `OXLONGDESC`,`oxid`.`oxpayments`.`OXSORT` AS `OXSORT`,`oxid`.`oxpayments`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxpayments`
+md5=01370db61f31ba588ae82761fe651e59
+updatable=1
+algorithm=0
+definer_user=oxid
+definer_host=%
+suid=0
+with_check_option=0
+timestamp=2024-09-05 12:52:36
+create-version=1
+source=SELECT oxpayments.OXID AS OXID,oxpayments.OXACTIVE AS OXACTIVE,oxpayments.OXDESC_1 AS OXDESC,oxpayments.OXADDSUM AS OXADDSUM,oxpayments.OXADDSUMTYPE AS OXADDSUMTYPE,oxpayments.OXADDSUMRULES AS OXADDSUMRULES,oxpayments.OXFROMBONI AS OXFROMBONI,oxpayments.OXFROMAMOUNT AS OXFROMAMOUNT,oxpayments.OXTOAMOUNT AS OXTOAMOUNT,oxpayments.OXVALDESC_1 AS OXVALDESC,oxpayments.OXCHECKED AS OXCHECKED,oxpayments.OXLONGDESC_1 AS OXLONGDESC,oxpayments.OXSORT AS OXSORT,oxpayments.OXTIMESTAMP AS OXTIMESTAMP FROM oxpayments
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `oxid`.`oxpayments`.`OXID` AS `OXID`,`oxid`.`oxpayments`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxpayments`.`OXDESC_1` AS `OXDESC`,`oxid`.`oxpayments`.`OXADDSUM` AS `OXADDSUM`,`oxid`.`oxpayments`.`OXADDSUMTYPE` AS `OXADDSUMTYPE`,`oxid`.`oxpayments`.`OXADDSUMRULES` AS `OXADDSUMRULES`,`oxid`.`oxpayments`.`OXFROMBONI` AS `OXFROMBONI`,`oxid`.`oxpayments`.`OXFROMAMOUNT` AS `OXFROMAMOUNT`,`oxid`.`oxpayments`.`OXTOAMOUNT` AS `OXTOAMOUNT`,`oxid`.`oxpayments`.`OXVALDESC_1` AS `OXVALDESC`,`oxid`.`oxpayments`.`OXCHECKED` AS `OXCHECKED`,`oxid`.`oxpayments`.`OXLONGDESC_1` AS `OXLONGDESC`,`oxid`.`oxpayments`.`OXSORT` AS `OXSORT`,`oxid`.`oxpayments`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxpayments`

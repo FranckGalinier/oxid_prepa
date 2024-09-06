@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `oxid`.`oxmediaurls`.`OXID` AS `OXID`,`oxid`.`oxmediaurls`.`OXOBJECTID` AS `OXOBJECTID`,`oxid`.`oxmediaurls`.`OXURL` AS `OXURL`,`oxid`.`oxmediaurls`.`OXDESC` AS `OXDESC`,`oxid`.`oxmediaurls`.`OXDESC_1` AS `OXDESC_1`,`oxid`.`oxmediaurls`.`OXDESC_2` AS `OXDESC_2`,`oxid`.`oxmediaurls`.`OXDESC_3` AS `OXDESC_3`,`oxid`.`oxmediaurls`.`OXISUPLOADED` AS `OXISUPLOADED`,`oxid`.`oxmediaurls`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxmediaurls`
+md5=9417f86384750886b93a40e7314ba73b
+updatable=1
+algorithm=0
+definer_user=oxid
+definer_host=%
+suid=0
+with_check_option=0
+timestamp=2024-09-05 12:52:36
+create-version=1
+source=SELECT oxmediaurls.OXID,oxmediaurls.OXOBJECTID,oxmediaurls.OXURL,oxmediaurls.OXDESC,oxmediaurls.OXDESC_1,oxmediaurls.OXDESC_2,oxmediaurls.OXDESC_3,oxmediaurls.OXISUPLOADED,oxmediaurls.OXTIMESTAMP FROM oxmediaurls
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `oxid`.`oxmediaurls`.`OXID` AS `OXID`,`oxid`.`oxmediaurls`.`OXOBJECTID` AS `OXOBJECTID`,`oxid`.`oxmediaurls`.`OXURL` AS `OXURL`,`oxid`.`oxmediaurls`.`OXDESC` AS `OXDESC`,`oxid`.`oxmediaurls`.`OXDESC_1` AS `OXDESC_1`,`oxid`.`oxmediaurls`.`OXDESC_2` AS `OXDESC_2`,`oxid`.`oxmediaurls`.`OXDESC_3` AS `OXDESC_3`,`oxid`.`oxmediaurls`.`OXISUPLOADED` AS `OXISUPLOADED`,`oxid`.`oxmediaurls`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxmediaurls`

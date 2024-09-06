@@ -1,0 +1,139 @@
+@import 'inc/basketcontents_list';
+@import 'inc/payments';
+
+.voucher-code {
+  max-width: 250px;
+}
+
+.voucher-input {
+  flex: 1;
+}
+.voucher-btn {
+  height: 100%;
+}
+
+.col-img {
+  width: 90px;
+}
+
+.is-checkout {
+  .menu-dropdowns {
+    margin-left: auto;
+  }
+
+  .card-body {
+    padding: 0 10px 10px;
+
+    @include media-breakpoint-up(md) {
+      padding: 0 20px 20px;
+    }
+  }
+
+  .card-header {
+    padding: 10px;
+    transition: all 150ms;
+
+    @include media-breakpoint-up(md) {
+      padding: 20px;
+    }
+
+    &.collapsed {
+      margin-bottom: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .list-group {
+    padding: 0 10px;
+  }
+}
+
+h4.card-header {
+  position: relative;
+  margin-bottom: 20px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    border-bottom: 1px solid #B7C1C6;
+
+    @include media-breakpoint-up(md) {
+      left: 20px;
+      right: 20px;
+    }
+  }
+}
+
+.list-group.border-0 {
+  .list-group-item {
+    border: none;
+  }
+}
+
+.steps {
+  font-size: 12px;
+
+  .step {
+    position: relative;
+    padding: 40px 20px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #000;
+
+    .num {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #000;
+      line-height: 28px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -15px;
+      border-radius: 50%;
+      color: #000;
+    }
+
+    &.text-muted {
+      color: #6A7281;
+
+      .num {
+        border-color: #6A7281;
+        color: #6A7281;
+      }
+    }
+
+    &.done {
+      .num {
+        border-color: #6EB156;
+        background: #6EB156;
+        color: #fff;
+      }
+    }
+
+    &::before,
+    &::after{
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: 0;
+      border-bottom: 1px solid #ccc;
+      width: calc(50% - 35px);
+    }
+
+    &::after {
+      left: auto;
+      right: 0;
+    }
+
+    &-1::before,
+    &-3::after {
+        display: none;
+    }
+  }
+}

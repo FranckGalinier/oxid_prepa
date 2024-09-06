@@ -1,0 +1,276 @@
+//
+// Header
+// --------------------------------------------------
+// Import header modules
+@import '../widget/header/categorylist';
+@import '../widget/header/minibasket';
+@import '../widget/header/search';
+
+.header {
+  background-color: $ox-header-bg;
+  color: $ox-header-color;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+
+  .h1 {
+    font-size: 24px;
+    text-decoration: none;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+  }
+
+  .cl-start & {
+    box-shadow: none;
+  }
+
+  .logo-link {
+    align-items: center;
+    width: 50%;
+    padding-right: $spacer;
+    justify-content: center;
+    height: 30px;
+
+    @include media-breakpoint-up(lg) {
+      padding: 0;
+      height: auto;
+      width: unset;
+      justify-content: unset;
+    }
+  }
+
+  .logo-img {
+    max-width: 140px;
+    max-height: 30px;
+    height: auto;
+
+    @include media-breakpoint-up(sm) {
+      max-width: unset;
+      max-height: unset;
+    }
+  }
+
+  .nav-link {
+    color: $ox-header-link-color;
+  }
+
+  &-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 10px 0;
+
+    @include media-breakpoint-up(lg) {
+      padding: 20px 0;
+      border-bottom: 1px solid $input-border-color;
+    }
+
+    .btn-text {
+      display: none;
+    }
+  }
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu-dropdowns {
+    .btn {
+      &:hover,
+      &:focus,
+      &.show {
+        border-color: transparent;
+        color: $highlight;
+      }
+
+      .badge {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+
+  .dropdowns {
+    label {
+      display: block;
+      width: 100%;
+      font-size: 12px;
+      color: #91A0A8;
+      margin-top: 10px;
+    }
+
+    .dropdown-toggle {
+      border: 1px solid #B7C1C6;
+      justify-content: space-between;
+      display: flex;
+
+      &:hover,
+      &.show,
+      &:focus {
+        border-color: #000;
+      }
+    }
+  }
+
+  .dropdown-menu-arrow {
+    padding: 10px 20px 20px;
+    min-width: 205px;
+    top: -2px !important;
+
+    &:after {
+      top: -7px;
+      right: 14px;
+      position: absolute;
+      content: '';
+      border-style: solid;
+      border-width: 0 7px 7px 7px;
+      border-color: transparent transparent #fff transparent;
+    }
+
+    .dropdown-menu {
+      border: 1px solid #B7C1C6;
+      box-shadow: none;
+      top: -3px !important;
+      padding: 0;
+      min-width: 100%;
+    }
+  }
+
+  .usp-list {
+    font-size: 14px;
+    line-height: 35px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    overflow: hidden;
+    width: 50%;
+    height: 50px;
+    background: $ox-meta-bg;
+    color: $ox-meta-color;
+    margin: 0;
+    padding: 0;
+
+    @include media-breakpoint-up(lg) {
+      position: static;
+      width: 100%;
+      height: auto;
+      display: flex;
+    }
+
+    svg {
+      fill: $ox-meta-color;
+      margin-right: 10px;
+    }
+
+    .list-inline-item {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0;
+      height: 50px;
+      padding: 0 10px;
+      line-height: initial;
+      transform: translate3d(0, 50px, 0);
+      background: $ox-meta-bg;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include rotateText(5);
+
+      @include media-breakpoint-up(lg) {
+        position: relative;
+        transform: initial;
+        animation: initial;
+        height: auto;
+        font-size: 16px;
+        padding: 0;
+        flex: 1 1 auto;
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+.meta {
+  display: block;
+  background: $ox-meta-bg;
+  color: $ox-meta-color;
+
+  svg {
+    fill: $ox-meta-link-color;
+    width: 18px;
+    height: 18px;
+  }
+
+  .btn {
+    &:hover,
+    &:focus,
+    &.show {
+      border-color: transparent;
+
+      svg {
+        fill: $highlight;
+      }
+    }
+  }
+}
+
+.mobile-nav {
+  background: $ox-header-bg;
+  display: flex;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1);
+
+  .btn {
+    flex: 1 1 auto;
+
+    &-text {
+      font-size: 10px;
+      display: block;
+    }
+  }
+}
+
+.is-checkout {
+  .header-container {
+    border: none;
+  }
+}
+
+@keyframes rotate {
+  /* Text is positioned below the wrap */
+  0% {
+    transform: translate3d(0, 50px, 0);
+  }
+
+  /* Move text up and make it visible */
+  2.5% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  /* Between 2.5% and 25%, nothing changes (text is visible) */
+  25% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  /* Move text up and out of the wrap */
+  27.5% {
+    transform: translate3d(0, -50px, 0);
+  }
+
+  /* Between 27.5% and 99%, nothing changes (text is invisible) */
+  99.9999% {
+    transform: translate3d(0, -50px, 0);
+  }
+
+  /* Move text to it's original position (loop starts over) */
+  100% {
+    transform: translate3d(0, 50px, 0);
+  }
+}

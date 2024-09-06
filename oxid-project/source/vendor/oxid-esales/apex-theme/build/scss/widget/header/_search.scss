@@ -1,0 +1,54 @@
+.search {
+  &:focus-within {
+    outline: 1px solid #000;
+  }
+
+  @include media-breakpoint-down(lg) {
+    position: absolute;
+    padding: 10px;
+    top: 50px;
+    width: 100%;
+    z-index: 10;
+    background: #fff;
+
+    &:not(.show) {
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    display: block !important;
+    min-width: 500px;
+  }
+
+  .form-control {
+    background: #fff;
+    border-color: #000;
+  }
+
+  .btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    padding: 0 10px;
+    display: flex;
+    border: 1px solid #000;
+    border-left: none;
+    align-items: center;
+    background: #fff;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: $ox-header-color;
+    }
+
+    &:hover {
+      svg {
+        fill: $highlight
+      }
+    }
+  }
+}

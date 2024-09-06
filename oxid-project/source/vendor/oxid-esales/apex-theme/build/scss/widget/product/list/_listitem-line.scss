@@ -1,0 +1,8 @@
+@if ($list-view) {
+  .line-view {
+    .card-img {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+}

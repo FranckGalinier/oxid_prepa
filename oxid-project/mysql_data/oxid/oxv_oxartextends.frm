@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `oxid`.`oxartextends`.`OXID` AS `OXID`,`oxid`.`oxartextends`.`OXLONGDESC` AS `OXLONGDESC`,`oxid`.`oxartextends`.`OXLONGDESC_1` AS `OXLONGDESC_1`,`oxid`.`oxartextends`.`OXLONGDESC_2` AS `OXLONGDESC_2`,`oxid`.`oxartextends`.`OXLONGDESC_3` AS `OXLONGDESC_3`,`oxid`.`oxartextends`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxartextends`
+md5=f73d7da889e45ac38e5c0ce1530c31bd
+updatable=1
+algorithm=0
+definer_user=oxid
+definer_host=%
+suid=0
+with_check_option=0
+timestamp=2024-09-05 12:52:36
+create-version=1
+source=SELECT oxartextends.OXID,oxartextends.OXLONGDESC,oxartextends.OXLONGDESC_1,oxartextends.OXLONGDESC_2,oxartextends.OXLONGDESC_3,oxartextends.OXTIMESTAMP FROM oxartextends
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `oxid`.`oxartextends`.`OXID` AS `OXID`,`oxid`.`oxartextends`.`OXLONGDESC` AS `OXLONGDESC`,`oxid`.`oxartextends`.`OXLONGDESC_1` AS `OXLONGDESC_1`,`oxid`.`oxartextends`.`OXLONGDESC_2` AS `OXLONGDESC_2`,`oxid`.`oxartextends`.`OXLONGDESC_3` AS `OXLONGDESC_3`,`oxid`.`oxartextends`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxartextends`

@@ -1,0 +1,164 @@
+.navbar-collapse {
+  display: block !important;
+  z-index: 123;
+  position: fixed;
+  top: 51px;
+  padding: 0;
+  bottom: 0;
+  width: 100%;
+  overflow-y: auto;
+  background-color: #fff;
+  transition: transform .3s ease-in-out;
+  transform: translateX(-110%);
+  height: calc(100% - 51px) !important;
+
+  .nav-link {
+    padding: 8px 15px;
+
+    &.dropdown-toggle {
+      position: relative;
+    }
+  }
+
+  .dropdown-menu {
+    border: transparent;
+    padding: 0 15px;
+    margin: 0;
+
+    @include media-breakpoint-up(lg) {
+      padding: 0;
+    }
+  }
+
+  .d-md-none .dropdown-toggle {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.navbar-collapse.show,
+.navbar-collapse.collapsing {
+  transform: translateX(0);
+}
+
+@include media-breakpoint-up(md) {
+  .navbar-collapse {
+    width: 300px;
+  }
+}
+
+.navbar {
+  position: absolute;
+  margin-left: -$grid-gutter-width/2;
+
+  @include media-breakpoint-up(lg) {
+    position: static;
+    margin-left: 0;
+
+    &-collapse {
+      position: static;
+      width: auto;
+      height: auto;
+      transform: inherit;
+      overflow: inherit;
+    }
+  }
+}
+
+.navbar-mega {
+  .navbar-collapse {
+    left: 0;
+  }
+}
+
+
+.navbar-nav.navbar-nav-mega {
+  @include media-breakpoint-up(lg) {
+    .nav-level-2 {
+      display: none;
+      padding: 25px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      background: #fff;
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-link-1 {
+      padding: 1rem 0;
+      margin-right: 4rem;
+    }
+
+    .nav-item-2 {
+      break-inside: avoid-column;
+      text-align: left;
+
+      .nav-link {
+        color: #333;
+        padding: 5px 0;
+
+        &:hover {
+          background: transparent;
+          color: $highlight;
+        }
+      }
+    }
+
+    .nav-level-3 {
+      .nav-link {
+        font-size: 90%;
+        color: #999;
+        padding: 4px 8px;
+
+        &:hover {
+          color: #333;
+        }
+      }
+    }
+
+    .nav-level-4 {
+      break-inside: avoid-column;
+
+      .nav-link {
+        padding-left: 16px;
+        font-size: 80%;
+
+        &:before {
+          content: '- ';
+        }
+      }
+    }
+
+    .nav-item {
+      &:hover {
+        .nav-link-1 {
+          background: #fff;
+          color: $highlight;
+          position: relative;
+        }
+      }
+    }
+
+    .nav-item.has-subs {
+      &:focus-within,
+      &:hover {
+        .nav-link-1 {
+          &:after {
+            content: '';
+            position: absolute;
+            z-index: 10;
+            bottom: -7px;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background: #fff;
+          }
+        }
+
+        .nav-level-2 {
+          display: block;
+        }
+      }
+    }
+  }
+}

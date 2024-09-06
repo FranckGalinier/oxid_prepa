@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `oxid`.`oxmanufacturers`.`OXID` AS `OXID`,`oxid`.`oxmanufacturers`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxmanufacturers`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxmanufacturers`.`OXICON` AS `OXICON`,`oxid`.`oxmanufacturers`.`OXICON_ALT` AS `OXICON_ALT`,`oxid`.`oxmanufacturers`.`OXPICTURE` AS `OXPICTURE`,`oxid`.`oxmanufacturers`.`OXTHUMBNAIL` AS `OXTHUMBNAIL`,`oxid`.`oxmanufacturers`.`OXPROMOTION_ICON` AS `OXPROMOTION_ICON`,`oxid`.`oxmanufacturers`.`OXTITLE` AS `OXTITLE`,`oxid`.`oxmanufacturers`.`OXSHORTDESC` AS `OXSHORTDESC`,`oxid`.`oxmanufacturers`.`OXTITLE_1` AS `OXTITLE_1`,`oxid`.`oxmanufacturers`.`OXSHORTDESC_1` AS `OXSHORTDESC_1`,`oxid`.`oxmanufacturers`.`OXTITLE_2` AS `OXTITLE_2`,`oxid`.`oxmanufacturers`.`OXSHORTDESC_2` AS `OXSHORTDESC_2`,`oxid`.`oxmanufacturers`.`OXTITLE_3` AS `OXTITLE_3`,`oxid`.`oxmanufacturers`.`OXSHORTDESC_3` AS `OXSHORTDESC_3`,`oxid`.`oxmanufacturers`.`OXSHOWSUFFIX` AS `OXSHOWSUFFIX`,`oxid`.`oxmanufacturers`.`OXSORT` AS `OXSORT`,`oxid`.`oxmanufacturers`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxmanufacturers`
+md5=51cdf225f3c1c520ee07838f36616095
+updatable=1
+algorithm=0
+definer_user=oxid
+definer_host=%
+suid=0
+with_check_option=0
+timestamp=2024-09-05 12:52:36
+create-version=1
+source=SELECT oxmanufacturers.OXID,oxmanufacturers.OXSHOPID,oxmanufacturers.OXACTIVE,oxmanufacturers.OXICON,oxmanufacturers.OXICON_ALT,oxmanufacturers.OXPICTURE,oxmanufacturers.OXTHUMBNAIL,oxmanufacturers.OXPROMOTION_ICON,oxmanufacturers.OXTITLE,oxmanufacturers.OXSHORTDESC,oxmanufacturers.OXTITLE_1,oxmanufacturers.OXSHORTDESC_1,oxmanufacturers.OXTITLE_2,oxmanufacturers.OXSHORTDESC_2,oxmanufacturers.OXTITLE_3,oxmanufacturers.OXSHORTDESC_3,oxmanufacturers.OXSHOWSUFFIX,oxmanufacturers.OXSORT,oxmanufacturers.OXTIMESTAMP FROM oxmanufacturers
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `oxid`.`oxmanufacturers`.`OXID` AS `OXID`,`oxid`.`oxmanufacturers`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxmanufacturers`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxmanufacturers`.`OXICON` AS `OXICON`,`oxid`.`oxmanufacturers`.`OXICON_ALT` AS `OXICON_ALT`,`oxid`.`oxmanufacturers`.`OXPICTURE` AS `OXPICTURE`,`oxid`.`oxmanufacturers`.`OXTHUMBNAIL` AS `OXTHUMBNAIL`,`oxid`.`oxmanufacturers`.`OXPROMOTION_ICON` AS `OXPROMOTION_ICON`,`oxid`.`oxmanufacturers`.`OXTITLE` AS `OXTITLE`,`oxid`.`oxmanufacturers`.`OXSHORTDESC` AS `OXSHORTDESC`,`oxid`.`oxmanufacturers`.`OXTITLE_1` AS `OXTITLE_1`,`oxid`.`oxmanufacturers`.`OXSHORTDESC_1` AS `OXSHORTDESC_1`,`oxid`.`oxmanufacturers`.`OXTITLE_2` AS `OXTITLE_2`,`oxid`.`oxmanufacturers`.`OXSHORTDESC_2` AS `OXSHORTDESC_2`,`oxid`.`oxmanufacturers`.`OXTITLE_3` AS `OXTITLE_3`,`oxid`.`oxmanufacturers`.`OXSHORTDESC_3` AS `OXSHORTDESC_3`,`oxid`.`oxmanufacturers`.`OXSHOWSUFFIX` AS `OXSHOWSUFFIX`,`oxid`.`oxmanufacturers`.`OXSORT` AS `OXSORT`,`oxid`.`oxmanufacturers`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxmanufacturers`

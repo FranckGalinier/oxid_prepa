@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `oxid`.`oxobject2attribute`.`OXID` AS `OXID`,`oxid`.`oxobject2attribute`.`OXOBJECTID` AS `OXOBJECTID`,`oxid`.`oxobject2attribute`.`OXATTRID` AS `OXATTRID`,`oxid`.`oxobject2attribute`.`OXVALUE_1` AS `OXVALUE`,`oxid`.`oxobject2attribute`.`OXPOS` AS `OXPOS`,`oxid`.`oxobject2attribute`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxobject2attribute`
+md5=f82b965fb1ae5564f25c284ef7efb6c5
+updatable=1
+algorithm=0
+definer_user=oxid
+definer_host=%
+suid=0
+with_check_option=0
+timestamp=2024-09-05 12:52:36
+create-version=1
+source=SELECT oxobject2attribute.OXID AS OXID,oxobject2attribute.OXOBJECTID AS OXOBJECTID,oxobject2attribute.OXATTRID AS OXATTRID,oxobject2attribute.OXVALUE_1 AS OXVALUE,oxobject2attribute.OXPOS AS OXPOS,oxobject2attribute.OXTIMESTAMP AS OXTIMESTAMP FROM oxobject2attribute
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `oxid`.`oxobject2attribute`.`OXID` AS `OXID`,`oxid`.`oxobject2attribute`.`OXOBJECTID` AS `OXOBJECTID`,`oxid`.`oxobject2attribute`.`OXATTRID` AS `OXATTRID`,`oxid`.`oxobject2attribute`.`OXVALUE_1` AS `OXVALUE`,`oxid`.`oxobject2attribute`.`OXPOS` AS `OXPOS`,`oxid`.`oxobject2attribute`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxobject2attribute`

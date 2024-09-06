@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `oxid`.`oxvendor`.`OXID` AS `OXID`,`oxid`.`oxvendor`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxvendor`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxvendor`.`OXICON` AS `OXICON`,`oxid`.`oxvendor`.`OXTITLE` AS `OXTITLE`,`oxid`.`oxvendor`.`OXSHORTDESC` AS `OXSHORTDESC`,`oxid`.`oxvendor`.`OXTITLE_1` AS `OXTITLE_1`,`oxid`.`oxvendor`.`OXSHORTDESC_1` AS `OXSHORTDESC_1`,`oxid`.`oxvendor`.`OXTITLE_2` AS `OXTITLE_2`,`oxid`.`oxvendor`.`OXSHORTDESC_2` AS `OXSHORTDESC_2`,`oxid`.`oxvendor`.`OXTITLE_3` AS `OXTITLE_3`,`oxid`.`oxvendor`.`OXSHORTDESC_3` AS `OXSHORTDESC_3`,`oxid`.`oxvendor`.`OXSHOWSUFFIX` AS `OXSHOWSUFFIX`,`oxid`.`oxvendor`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxvendor`
+md5=f7b80e0c27aaed049a6a6d7f8dd40e9b
+updatable=1
+algorithm=0
+definer_user=oxid
+definer_host=%
+suid=0
+with_check_option=0
+timestamp=2024-09-05 12:52:36
+create-version=1
+source=SELECT oxvendor.OXID,oxvendor.OXSHOPID,oxvendor.OXACTIVE,oxvendor.OXICON,oxvendor.OXTITLE,oxvendor.OXSHORTDESC,oxvendor.OXTITLE_1,oxvendor.OXSHORTDESC_1,oxvendor.OXTITLE_2,oxvendor.OXSHORTDESC_2,oxvendor.OXTITLE_3,oxvendor.OXSHORTDESC_3,oxvendor.OXSHOWSUFFIX,oxvendor.OXTIMESTAMP FROM oxvendor
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `oxid`.`oxvendor`.`OXID` AS `OXID`,`oxid`.`oxvendor`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxvendor`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxvendor`.`OXICON` AS `OXICON`,`oxid`.`oxvendor`.`OXTITLE` AS `OXTITLE`,`oxid`.`oxvendor`.`OXSHORTDESC` AS `OXSHORTDESC`,`oxid`.`oxvendor`.`OXTITLE_1` AS `OXTITLE_1`,`oxid`.`oxvendor`.`OXSHORTDESC_1` AS `OXSHORTDESC_1`,`oxid`.`oxvendor`.`OXTITLE_2` AS `OXTITLE_2`,`oxid`.`oxvendor`.`OXSHORTDESC_2` AS `OXSHORTDESC_2`,`oxid`.`oxvendor`.`OXTITLE_3` AS `OXTITLE_3`,`oxid`.`oxvendor`.`OXSHORTDESC_3` AS `OXSHORTDESC_3`,`oxid`.`oxvendor`.`OXSHOWSUFFIX` AS `OXSHOWSUFFIX`,`oxid`.`oxvendor`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxvendor`

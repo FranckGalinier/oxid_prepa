@@ -1,0 +1,131 @@
+.brand-card {
+  .card-img {
+    opacity: .7;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .card-title {
+    margin-bottom: 2 * $spacer;
+  }
+
+  .logo {
+    width: 60%;
+    height: auto;
+    margin-bottom: 2 * $spacer;
+  }
+
+  .card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.categories {
+  position: relative;
+  margin: 0 (-$spacer*0.5);
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: $spacer;
+    right: $spacer;
+    border-bottom: 1px solid $gray-500;
+  }
+}
+
+.category-list {
+  padding: $spacer * 2 $spacer;
+  white-space: nowrap;
+  margin-bottom: 2rem;
+  overflow-y: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar,
+  &::-webkit-scrollbar-thumb {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: $spacer * 4 $spacer;
+    margin-bottom: 3rem;
+  }
+}
+
+.manufacturer-list {
+  .col-lg {
+    max-width: 200px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  top: auto;
+  padding: 4rem 2*$spacer 2*$spacer;
+  background: transparent linear-gradient(180deg, #00000005 0%, #000000B9 60%, #000000B9 100%) 0% 0%;
+
+  @include media-breakpoint-up(lg) {
+    padding: 4rem 4*$spacer 4*$spacer;
+  }
+}
+
+.manufacturer {
+  margin: 0 (-$spacer * 0.5);
+}
+
+.usp-list-content {
+  padding: 40px 0;
+  font-size: 14px;
+  line-height: 35px;
+  background: $ox-meta-bg;
+  color: $ox-meta-color;
+  margin: 0;
+
+  .list-inline-item {
+    display: flex;
+    flex-direction: column;
+    font-family: $headings-font-family;
+    width: 160px;
+    min-width: 160px;
+    align-items: center;
+
+    @include media-breakpoint-up(md) {
+      width: auto;
+      min-width: auto;
+      flex: 0 1 100%;
+    }
+
+    svg {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 20px;
+    }
+  }
+
+  svg {
+    fill: $ox-meta-color;
+    margin-right: 10px;
+  }
+}

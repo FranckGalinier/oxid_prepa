@@ -1,0 +1,200 @@
+{% extends "form/user.html.twig" %}
+
+{% block user %}
+    {% if true == oViewConf.showGdprDeliveryOptIn() %}
+        {% if Errors.oegdproptin_deliveryaddress %}
+            {% set oError = Errors.oegdproptin_deliveryaddress.0 %}
+                <div class="alert alert-danger">{{ oError.getOxMessage() }}</div>
+                <div class="help-block"></div>
+        {% endif %}
+    {% endif %}
+
+    {% if true == oViewConf.showGdprInvoiceOptIn() %}
+        {% if Errors.oegdproptin_invoiceaddress %}
+            {% set oError = Errors.oegdproptin_invoiceaddress.0 %}
+            <div class="alert alert-danger">{{ oError.getOxMessage() }}</div>
+            <div class="help-block"></div>
+        {% endif %}
+    {% endif %}
+
+    {{ parent() }}
+{% endblock %}
+
+
+{% block user_shipping_address_form %}
+    {{ parent() }}
+
+    {% if oxcmp_user %}
+        {% set delivadr = oxcmp_user.getSelectedAddress() %}
+    {% endif %}
+
+    {% if true == oViewConf.showGdprDeliveryOptIn() %}
+        <div id="GdprShippingAddressOptin" style="{% if delivadr or not oView.showShipAddress() %}display: none;{% endif %}">
+            <div class="checkbox">
+                <div class="form-check">
+                    <input type="hidden" class="hidden" id="oegdproptin_changeDelAddress" name="oegdproptin_changeDelAddress" value="0">
+                    <input class="form-check-input" type="checkbox" name="oegdproptin_deliveryaddress" id="oegdproptin_deliveryaddress" value="1">
+                    <label class="form-check-label" for="oegdproptin_deliveryaddress">
+                        <strong>{{ translate({ ident: "OEGDPROPTIN_STORE_DELIVERY_ADDRESS" }) }}</strong>
+                    </label>
+                    <div id="oegdproptin_deliveryaddress_error" style="display:none;" class="text-danger">{{ translate({ ident: "OEGDPROPTIN_CONFIRM_STORE_DELIVERY_ADDRESS" }) }}</div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
+
+
+{% block user_billing_address_form %}
+    {{ parent() }}
+
+    {% if true == oViewConf.showGdprInvoiceOptIn() %}
+        <div id="GdprInvoiceAddressOptin" style="display: none;">
+            <div class="checkbox">
+                <div class="form-check">
+                    <input type="hidden" class="hidden" id="oegdproptin_changeInvAddress" name="oegdproptin_changeInvAddress" value="0">
+                    <input class="form-check-input" type="checkbox" name="oegdproptin_invoiceaddress" id="oegdproptin_invoiceaddress" value="1">
+                    <label class="form-check-label" for="oegdproptin_invoiceaddress">
+                        <strong>{{ translate({ ident: "OEGDPROPTIN_STORE_INVOICE_ADDRESS" }) }}</strong>
+                    </label>
+                    <div id="oegdproptin_invoiceaddress_error" style="display:none;" class="text-danger">{{ translate({ ident: "OEGDPROPTIN_CONFIRM_STORE_INVOICE_ADDRESS" }) }}</div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
+
+
+{% block user_form %}
+    {% if oxcmp_user %}
+        {% set delivadr = oxcmp_user.getSelectedAddress() %}
+    {% endif %}
+
+    {% if true == oViewConf.showGdprDeliveryOptIn() %}
+        {% if delivadr %}
+            <script type="text/javascript">
+                function editShippingAddressJS() {
+                    document.querySelector('.dd-edit-shipping-address').addEventListener('click', function(){
+                        if (document.getElementById('oegdproptin_changeDelAddress')) {
+                            document.getElementById('oegdproptin_changeDelAddress').value=1;
+                        }
+                        if (!document.querySelector('#GdprShippingAddressOptin')) {
+                            return false;
+                        }
+                        if (document.querySelector('.dd-edit-shipping-address').checked) {
+                            document.querySelector('#GdprShippingAddressOptin').setAttribute('style', 'display: none;');
+                        } else {
+                            document.querySelector('#GdprShippingAddressOptin').removeAttribute('style');
+                        }
+                    });
+                }
+            </script>
+            {{ script({ add: "editShippingAddressJS();", dynamic: __oxid_include_dynamic }) }}
+        {% endif %}
+        <script type="text/javascript">
+            function showShipAddressJS() {
+                document.querySelector('#showShipAddress').addEventListener('change', function() {
+                    if (!document.querySelector('#GdprShippingAddressOptin')){
+                        return false;
+                    }
+
+                    if (document.querySelector('#showShipAddress').checked){
+                        document.querySelector('#GdprShippingAddressOptin').setAttribute('style', 'display: none;');
+                    } else {
+                        document.querySelector('#GdprShippingAddressOptin').removeAttribute('style');
+                    }
+                    return true;
+                });
+            }
+        </script>
+        {{ script({ add: "showShipAddressJS();", dynamic: __oxid_include_dynamic }) }}
+
+    {% endif %}
+
+    {% if true == oViewConf.showGdprInvoiceOptIn() %}
+        <script type="text/javascript">
+            function editInvoiceAddressJS() {
+                document.querySelector('#userChangeAddress').addEventListener('click', function(){
+                    if (document.getElementById('oegdproptin_changeInvAddress')) {
+                        document.getElementById('oegdproptin_changeInvAddress').value=1;
+                    }
+                    if (!document.querySelector('#GdprShippingAddressOptin')) {
+                        return false;
+                    }
+                    if (document.querySelector('.dd-add-delivery-address').checked) {
+                        document.querySelector('#GdprShippingAddressOptin').setAttribute('style', 'display: none;');
+                    } else {
+                        document.querySelector('#GdprShippingAddressOptin').removeAttribute('style');
+                    }
+                });
+            }
+        </script>
+       <script type="text/javascript">
+          function userChangeAddressJS() {
+              document.querySelector('#userChangeAddress').addEventListener('click', function() {
+                  if (document.querySelector('#GdprInvoiceAddressOptin')) {
+                      document.querySelector('#GdprInvoiceAddressOptin').removeAttribute('style');
+                  }
+                  if (document.querySelector('#userChangeAddress')) {
+                      document.querySelector('#userChangeAddress').setAttribute('style', 'display: none;');
+                  }
+                  return false;
+              });
+          }
+       </script>
+       {{ script({ add: "userChangeAddressJS();", dynamic: __oxid_include_dynamic }) }}
+       {{ script({ add: "editInvoiceAddressJS();", dynamic: __oxid_include_dynamic }) }}
+    {% endif %}
+
+    <script type="text/javascript">
+        function optinValidationJS() {
+            document.querySelector("#accUserSaveTop").addEventListener('click', function (event) {
+                event.preventDefault();
+
+                if (document.querySelector("#oegdproptin_deliveryaddress_error")) {
+                    document.querySelector("#oegdproptin_deliveryaddress_error").setAttribute('style', 'display: none;');
+                }
+                if (document.querySelector("#oegdproptin_invoiceaddress_error")) {
+                    document.querySelector("#oegdproptin_invoiceaddress_error").setAttribute('style', 'display: none;');
+                }
+
+                var success = true;
+                if (
+                    document.querySelector('#GdprInvoiceAddressOptin') &&
+                    !document.querySelector('#GdprInvoiceAddressOptin').hasAttribute('style') &&
+                    document.querySelector('#oegdproptin_invoiceaddress') &&
+                    !document.querySelector('#oegdproptin_invoiceaddress').hasAttribute('style') &&
+                    document.querySelector('#oegdproptin_invoiceaddress') &&
+                    !document.querySelector('#oegdproptin_invoiceaddress').checked
+                ){
+                    if (document.querySelector("#oegdproptin_invoiceaddress_error")) {
+                        document.querySelector("#oegdproptin_invoiceaddress_error").removeAttribute('style');
+                    }
+                    success = false;
+                }
+                if ( document.querySelector('#showShipAddress') &&
+                    !document.querySelector('#showShipAddress').checked &&
+                     document.querySelector('#oegdproptin_deliveryaddress') &&
+                    !document.querySelector('#oegdproptin_deliveryaddress').hasAttribute('style') &&
+                     document.querySelector('#oegdproptin_deliveryaddress') &&
+                    !document.querySelector('#oegdproptin_deliveryaddress').checked
+                ){
+                    if (document.querySelector("#oegdproptin_deliveryaddress_error")) {
+                        document.querySelector("#oegdproptin_deliveryaddress_error").removeAttribute('style');
+                    }
+                    success = false;
+                }
+
+                if (success) {
+                    document.querySelector("#accUserSaveTop").closest('form').submit();
+                }
+
+                return success;
+            });
+        }
+    </script>
+
+    {{ script({ add: "optinValidationJS();", dynamic: __oxid_include_dynamic }) }}
+
+    {{ parent() }}
+{% endblock %}

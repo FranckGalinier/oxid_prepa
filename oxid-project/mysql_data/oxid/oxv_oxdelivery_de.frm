@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `oxid`.`oxdelivery`.`OXID` AS `OXID`,`oxid`.`oxdelivery`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxdelivery`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxdelivery`.`OXACTIVEFROM` AS `OXACTIVEFROM`,`oxid`.`oxdelivery`.`OXACTIVETO` AS `OXACTIVETO`,`oxid`.`oxdelivery`.`OXTITLE` AS `OXTITLE`,`oxid`.`oxdelivery`.`OXADDSUMTYPE` AS `OXADDSUMTYPE`,`oxid`.`oxdelivery`.`OXADDSUM` AS `OXADDSUM`,`oxid`.`oxdelivery`.`OXDELTYPE` AS `OXDELTYPE`,`oxid`.`oxdelivery`.`OXPARAM` AS `OXPARAM`,`oxid`.`oxdelivery`.`OXPARAMEND` AS `OXPARAMEND`,`oxid`.`oxdelivery`.`OXFIXED` AS `OXFIXED`,`oxid`.`oxdelivery`.`OXSORT` AS `OXSORT`,`oxid`.`oxdelivery`.`OXFINALIZE` AS `OXFINALIZE`,`oxid`.`oxdelivery`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxdelivery`
+md5=07a911eb4df063b48bbc2fa4e2f19bae
+updatable=1
+algorithm=0
+definer_user=oxid
+definer_host=%
+suid=0
+with_check_option=0
+timestamp=2024-09-05 12:52:36
+create-version=1
+source=SELECT oxdelivery.OXID AS OXID,oxdelivery.OXSHOPID AS OXSHOPID,oxdelivery.OXACTIVE AS OXACTIVE,oxdelivery.OXACTIVEFROM AS OXACTIVEFROM,oxdelivery.OXACTIVETO AS OXACTIVETO,oxdelivery.OXTITLE AS OXTITLE,oxdelivery.OXADDSUMTYPE AS OXADDSUMTYPE,oxdelivery.OXADDSUM AS OXADDSUM,oxdelivery.OXDELTYPE AS OXDELTYPE,oxdelivery.OXPARAM AS OXPARAM,oxdelivery.OXPARAMEND AS OXPARAMEND,oxdelivery.OXFIXED AS OXFIXED,oxdelivery.OXSORT AS OXSORT,oxdelivery.OXFINALIZE AS OXFINALIZE,oxdelivery.OXTIMESTAMP AS OXTIMESTAMP FROM oxdelivery
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `oxid`.`oxdelivery`.`OXID` AS `OXID`,`oxid`.`oxdelivery`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxdelivery`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxdelivery`.`OXACTIVEFROM` AS `OXACTIVEFROM`,`oxid`.`oxdelivery`.`OXACTIVETO` AS `OXACTIVETO`,`oxid`.`oxdelivery`.`OXTITLE` AS `OXTITLE`,`oxid`.`oxdelivery`.`OXADDSUMTYPE` AS `OXADDSUMTYPE`,`oxid`.`oxdelivery`.`OXADDSUM` AS `OXADDSUM`,`oxid`.`oxdelivery`.`OXDELTYPE` AS `OXDELTYPE`,`oxid`.`oxdelivery`.`OXPARAM` AS `OXPARAM`,`oxid`.`oxdelivery`.`OXPARAMEND` AS `OXPARAMEND`,`oxid`.`oxdelivery`.`OXFIXED` AS `OXFIXED`,`oxid`.`oxdelivery`.`OXSORT` AS `OXSORT`,`oxid`.`oxdelivery`.`OXFINALIZE` AS `OXFINALIZE`,`oxid`.`oxdelivery`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxdelivery`

@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `oxid`.`oxmanufacturers`.`OXID` AS `OXID`,`oxid`.`oxmanufacturers`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxmanufacturers`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxmanufacturers`.`OXICON` AS `OXICON`,`oxid`.`oxmanufacturers`.`OXICON_ALT` AS `OXICON_ALT`,`oxid`.`oxmanufacturers`.`OXPICTURE` AS `OXPICTURE`,`oxid`.`oxmanufacturers`.`OXTHUMBNAIL` AS `OXTHUMBNAIL`,`oxid`.`oxmanufacturers`.`OXPROMOTION_ICON` AS `OXPROMOTION_ICON`,`oxid`.`oxmanufacturers`.`OXTITLE_1` AS `OXTITLE`,`oxid`.`oxmanufacturers`.`OXSHORTDESC_1` AS `OXSHORTDESC`,`oxid`.`oxmanufacturers`.`OXSHOWSUFFIX` AS `OXSHOWSUFFIX`,`oxid`.`oxmanufacturers`.`OXSORT` AS `OXSORT`,`oxid`.`oxmanufacturers`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxmanufacturers`
+md5=f8307a654237d20ba6a27c53c6c3ffcc
+updatable=1
+algorithm=0
+definer_user=oxid
+definer_host=%
+suid=0
+with_check_option=0
+timestamp=2024-09-05 12:52:36
+create-version=1
+source=SELECT oxmanufacturers.OXID AS OXID,oxmanufacturers.OXSHOPID AS OXSHOPID,oxmanufacturers.OXACTIVE AS OXACTIVE,oxmanufacturers.OXICON AS OXICON,oxmanufacturers.OXICON_ALT AS OXICON_ALT,oxmanufacturers.OXPICTURE AS OXPICTURE,oxmanufacturers.OXTHUMBNAIL AS OXTHUMBNAIL,oxmanufacturers.OXPROMOTION_ICON AS OXPROMOTION_ICON,oxmanufacturers.OXTITLE_1 AS OXTITLE,oxmanufacturers.OXSHORTDESC_1 AS OXSHORTDESC,oxmanufacturers.OXSHOWSUFFIX AS OXSHOWSUFFIX,oxmanufacturers.OXSORT AS OXSORT,oxmanufacturers.OXTIMESTAMP AS OXTIMESTAMP FROM oxmanufacturers
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `oxid`.`oxmanufacturers`.`OXID` AS `OXID`,`oxid`.`oxmanufacturers`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxmanufacturers`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxmanufacturers`.`OXICON` AS `OXICON`,`oxid`.`oxmanufacturers`.`OXICON_ALT` AS `OXICON_ALT`,`oxid`.`oxmanufacturers`.`OXPICTURE` AS `OXPICTURE`,`oxid`.`oxmanufacturers`.`OXTHUMBNAIL` AS `OXTHUMBNAIL`,`oxid`.`oxmanufacturers`.`OXPROMOTION_ICON` AS `OXPROMOTION_ICON`,`oxid`.`oxmanufacturers`.`OXTITLE_1` AS `OXTITLE`,`oxid`.`oxmanufacturers`.`OXSHORTDESC_1` AS `OXSHORTDESC`,`oxid`.`oxmanufacturers`.`OXSHOWSUFFIX` AS `OXSHOWSUFFIX`,`oxid`.`oxmanufacturers`.`OXSORT` AS `OXSORT`,`oxid`.`oxmanufacturers`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxmanufacturers`

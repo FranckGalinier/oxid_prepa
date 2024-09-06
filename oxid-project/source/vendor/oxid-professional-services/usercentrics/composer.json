@@ -1,0 +1,22 @@
+{
+  "name": "oxid-professional-services/usercentrics",
+  "description": " OXID Cookie Management powered by usercentrics",
+  "type": "oxideshop-module",
+  "license": ["proprietary"],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=8.0",
+    "symfony/yaml" : "> 3",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "ext-dom": "*",
+    "ext-libxml": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "OxidProfessionalServices\\Usercentrics\\": "src",
+      "OxidProfessionalServices\\Usercentrics\\Tests\\": "tests"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `oxid`.`oxlinks`.`OXID` AS `OXID`,`oxid`.`oxlinks`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxlinks`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxlinks`.`OXURL` AS `OXURL`,`oxid`.`oxlinks`.`OXURLDESC` AS `OXURLDESC`,`oxid`.`oxlinks`.`OXURLDESC_1` AS `OXURLDESC_1`,`oxid`.`oxlinks`.`OXURLDESC_2` AS `OXURLDESC_2`,`oxid`.`oxlinks`.`OXURLDESC_3` AS `OXURLDESC_3`,`oxid`.`oxlinks`.`OXINSERT` AS `OXINSERT`,`oxid`.`oxlinks`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxlinks`
+md5=89d2d3f8694781355f1fd8713b8667ca
+updatable=1
+algorithm=0
+definer_user=oxid
+definer_host=%
+suid=0
+with_check_option=0
+timestamp=2024-09-05 12:52:36
+create-version=1
+source=SELECT oxlinks.OXID,oxlinks.OXSHOPID,oxlinks.OXACTIVE,oxlinks.OXURL,oxlinks.OXURLDESC,oxlinks.OXURLDESC_1,oxlinks.OXURLDESC_2,oxlinks.OXURLDESC_3,oxlinks.OXINSERT,oxlinks.OXTIMESTAMP FROM oxlinks
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `oxid`.`oxlinks`.`OXID` AS `OXID`,`oxid`.`oxlinks`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxlinks`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxlinks`.`OXURL` AS `OXURL`,`oxid`.`oxlinks`.`OXURLDESC` AS `OXURLDESC`,`oxid`.`oxlinks`.`OXURLDESC_1` AS `OXURLDESC_1`,`oxid`.`oxlinks`.`OXURLDESC_2` AS `OXURLDESC_2`,`oxid`.`oxlinks`.`OXURLDESC_3` AS `OXURLDESC_3`,`oxid`.`oxlinks`.`OXINSERT` AS `OXINSERT`,`oxid`.`oxlinks`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxlinks`

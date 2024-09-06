@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `oxid`.`oxartextends`.`OXID` AS `OXID`,`oxid`.`oxartextends`.`OXLONGDESC_1` AS `OXLONGDESC`,`oxid`.`oxartextends`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxartextends`
+md5=fc55d0ef7bcf9a9e3e938b2f63ffe881
+updatable=1
+algorithm=0
+definer_user=oxid
+definer_host=%
+suid=0
+with_check_option=0
+timestamp=2024-09-05 12:52:36
+create-version=1
+source=SELECT oxartextends.OXID AS OXID,oxartextends.OXLONGDESC_1 AS OXLONGDESC,oxartextends.OXTIMESTAMP AS OXTIMESTAMP FROM oxartextends
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `oxid`.`oxartextends`.`OXID` AS `OXID`,`oxid`.`oxartextends`.`OXLONGDESC_1` AS `OXLONGDESC`,`oxid`.`oxartextends`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxartextends`

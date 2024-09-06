@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `oxid`.`oxstates`.`OXID` AS `OXID`,`oxid`.`oxstates`.`OXCOUNTRYID` AS `OXCOUNTRYID`,`oxid`.`oxstates`.`OXTITLE_1` AS `OXTITLE`,`oxid`.`oxstates`.`OXISOALPHA2` AS `OXISOALPHA2`,`oxid`.`oxstates`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxstates`
+md5=5ba032dc5b617dbfde550caaa6019f70
+updatable=1
+algorithm=0
+definer_user=oxid
+definer_host=%
+suid=0
+with_check_option=0
+timestamp=2024-09-05 12:52:36
+create-version=1
+source=SELECT oxstates.OXID AS OXID,oxstates.OXCOUNTRYID AS OXCOUNTRYID,oxstates.OXTITLE_1 AS OXTITLE,oxstates.OXISOALPHA2 AS OXISOALPHA2,oxstates.OXTIMESTAMP AS OXTIMESTAMP FROM oxstates
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `oxid`.`oxstates`.`OXID` AS `OXID`,`oxid`.`oxstates`.`OXCOUNTRYID` AS `OXCOUNTRYID`,`oxid`.`oxstates`.`OXTITLE_1` AS `OXTITLE`,`oxid`.`oxstates`.`OXISOALPHA2` AS `OXISOALPHA2`,`oxid`.`oxstates`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxstates`

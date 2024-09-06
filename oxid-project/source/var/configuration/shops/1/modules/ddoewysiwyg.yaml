@@ -1,0 +1,26 @@
+id: ddoewysiwyg
+moduleSource: vendor/ddoe/wysiwyg-editor-module
+version: 3.0.2
+activated: false
+title:
+  en: 'WYSIWYG Editor + Mediathek'
+description:
+  de: ''
+  en: ''
+lang: ''
+thumbnail: logo.png
+author: 'OXID eSales AG & digidesk - media solutions'
+url: 'http://www.oxid-esales.com'
+email: info@oxid-esales.com
+classExtensions:
+  OxidEsales\Eshop\Application\Controller\TextEditorHandler: OxidEsales\WysiwygModule\Application\Controller\TextEditorHandler
+  OxidEsales\Eshop\Core\ViewConfig: OxidEsales\WysiwygModule\Core\ViewConfig
+  OxidEsales\Eshop\Core\Language: OxidEsales\WysiwygModule\Core\Language
+  OxidEsales\Eshop\Core\Utils: OxidEsales\WysiwygModule\Core\Utils
+controllers:
+  ddoewysiwyglangjs: OxidEsales\WysiwygModule\Application\Controller\WysiwygLangJs
+  ddoewysiwygmedia_view: OxidEsales\WysiwygModule\Application\Controller\Admin\WysiwygMedia
+  ddoewysiwygmedia_wrapper: OxidEsales\WysiwygModule\Application\Controller\Admin\WysiwygMediaWrapper
+events:
+  onActivate: '\OxidEsales\WysiwygModule\Core\Events::onActivate'
+  onDeactivate: '\OxidEsales\WysiwygModule\Core\Events::onDeactivate'

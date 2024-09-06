@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `oxid`.`oxcountry`.`OXID` AS `OXID`,`oxid`.`oxcountry`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxcountry`.`OXTITLE` AS `OXTITLE`,`oxid`.`oxcountry`.`OXISOALPHA2` AS `OXISOALPHA2`,`oxid`.`oxcountry`.`OXISOALPHA3` AS `OXISOALPHA3`,`oxid`.`oxcountry`.`OXUNNUM3` AS `OXUNNUM3`,`oxid`.`oxcountry`.`OXVATINPREFIX` AS `OXVATINPREFIX`,`oxid`.`oxcountry`.`OXORDER` AS `OXORDER`,`oxid`.`oxcountry`.`OXSHORTDESC` AS `OXSHORTDESC`,`oxid`.`oxcountry`.`OXLONGDESC` AS `OXLONGDESC`,`oxid`.`oxcountry`.`OXTITLE_1` AS `OXTITLE_1`,`oxid`.`oxcountry`.`OXTITLE_2` AS `OXTITLE_2`,`oxid`.`oxcountry`.`OXTITLE_3` AS `OXTITLE_3`,`oxid`.`oxcountry`.`OXSHORTDESC_1` AS `OXSHORTDESC_1`,`oxid`.`oxcountry`.`OXSHORTDESC_2` AS `OXSHORTDESC_2`,`oxid`.`oxcountry`.`OXSHORTDESC_3` AS `OXSHORTDESC_3`,`oxid`.`oxcountry`.`OXLONGDESC_1` AS `OXLONGDESC_1`,`oxid`.`oxcountry`.`OXLONGDESC_2` AS `OXLONGDESC_2`,`oxid`.`oxcountry`.`OXLONGDESC_3` AS `OXLONGDESC_3`,`oxid`.`oxcountry`.`OXVATSTATUS` AS `OXVATSTATUS`,`oxid`.`oxcountry`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxcountry`
+md5=1aee227355ac4bfe38165047a0971c8a
+updatable=1
+algorithm=0
+definer_user=oxid
+definer_host=%
+suid=0
+with_check_option=0
+timestamp=2024-09-05 12:52:36
+create-version=1
+source=SELECT oxcountry.OXID,oxcountry.OXACTIVE,oxcountry.OXTITLE,oxcountry.OXISOALPHA2,oxcountry.OXISOALPHA3,oxcountry.OXUNNUM3,oxcountry.OXVATINPREFIX,oxcountry.OXORDER,oxcountry.OXSHORTDESC,oxcountry.OXLONGDESC,oxcountry.OXTITLE_1,oxcountry.OXTITLE_2,oxcountry.OXTITLE_3,oxcountry.OXSHORTDESC_1,oxcountry.OXSHORTDESC_2,oxcountry.OXSHORTDESC_3,oxcountry.OXLONGDESC_1,oxcountry.OXLONGDESC_2,oxcountry.OXLONGDESC_3,oxcountry.OXVATSTATUS,oxcountry.OXTIMESTAMP FROM oxcountry
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `oxid`.`oxcountry`.`OXID` AS `OXID`,`oxid`.`oxcountry`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxcountry`.`OXTITLE` AS `OXTITLE`,`oxid`.`oxcountry`.`OXISOALPHA2` AS `OXISOALPHA2`,`oxid`.`oxcountry`.`OXISOALPHA3` AS `OXISOALPHA3`,`oxid`.`oxcountry`.`OXUNNUM3` AS `OXUNNUM3`,`oxid`.`oxcountry`.`OXVATINPREFIX` AS `OXVATINPREFIX`,`oxid`.`oxcountry`.`OXORDER` AS `OXORDER`,`oxid`.`oxcountry`.`OXSHORTDESC` AS `OXSHORTDESC`,`oxid`.`oxcountry`.`OXLONGDESC` AS `OXLONGDESC`,`oxid`.`oxcountry`.`OXTITLE_1` AS `OXTITLE_1`,`oxid`.`oxcountry`.`OXTITLE_2` AS `OXTITLE_2`,`oxid`.`oxcountry`.`OXTITLE_3` AS `OXTITLE_3`,`oxid`.`oxcountry`.`OXSHORTDESC_1` AS `OXSHORTDESC_1`,`oxid`.`oxcountry`.`OXSHORTDESC_2` AS `OXSHORTDESC_2`,`oxid`.`oxcountry`.`OXSHORTDESC_3` AS `OXSHORTDESC_3`,`oxid`.`oxcountry`.`OXLONGDESC_1` AS `OXLONGDESC_1`,`oxid`.`oxcountry`.`OXLONGDESC_2` AS `OXLONGDESC_2`,`oxid`.`oxcountry`.`OXLONGDESC_3` AS `OXLONGDESC_3`,`oxid`.`oxcountry`.`OXVATSTATUS` AS `OXVATSTATUS`,`oxid`.`oxcountry`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxcountry`

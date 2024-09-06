@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `oxid`.`oxactions`.`OXID` AS `OXID`,`oxid`.`oxactions`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxactions`.`OXTYPE` AS `OXTYPE`,`oxid`.`oxactions`.`OXTITLE` AS `OXTITLE`,`oxid`.`oxactions`.`OXLONGDESC` AS `OXLONGDESC`,`oxid`.`oxactions`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxactions`.`OXACTIVEFROM` AS `OXACTIVEFROM`,`oxid`.`oxactions`.`OXACTIVETO` AS `OXACTIVETO`,`oxid`.`oxactions`.`OXPIC` AS `OXPIC`,`oxid`.`oxactions`.`OXLINK` AS `OXLINK`,`oxid`.`oxactions`.`OXSORT` AS `OXSORT`,`oxid`.`oxactions`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxactions`
+md5=44d0676b0356ec3c90482fba64f67cb3
+updatable=1
+algorithm=0
+definer_user=oxid
+definer_host=%
+suid=0
+with_check_option=0
+timestamp=2024-09-05 12:52:36
+create-version=1
+source=SELECT oxactions.OXID AS OXID,oxactions.OXSHOPID AS OXSHOPID,oxactions.OXTYPE AS OXTYPE,oxactions.OXTITLE AS OXTITLE,oxactions.OXLONGDESC AS OXLONGDESC,oxactions.OXACTIVE AS OXACTIVE,oxactions.OXACTIVEFROM AS OXACTIVEFROM,oxactions.OXACTIVETO AS OXACTIVETO,oxactions.OXPIC AS OXPIC,oxactions.OXLINK AS OXLINK,oxactions.OXSORT AS OXSORT,oxactions.OXTIMESTAMP AS OXTIMESTAMP FROM oxactions
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `oxid`.`oxactions`.`OXID` AS `OXID`,`oxid`.`oxactions`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxactions`.`OXTYPE` AS `OXTYPE`,`oxid`.`oxactions`.`OXTITLE` AS `OXTITLE`,`oxid`.`oxactions`.`OXLONGDESC` AS `OXLONGDESC`,`oxid`.`oxactions`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxactions`.`OXACTIVEFROM` AS `OXACTIVEFROM`,`oxid`.`oxactions`.`OXACTIVETO` AS `OXACTIVETO`,`oxid`.`oxactions`.`OXPIC` AS `OXPIC`,`oxid`.`oxactions`.`OXLINK` AS `OXLINK`,`oxid`.`oxactions`.`OXSORT` AS `OXSORT`,`oxid`.`oxactions`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxactions`

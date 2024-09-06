@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `oxid`.`oxattribute`.`OXID` AS `OXID`,`oxid`.`oxattribute`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxattribute`.`OXTITLE` AS `OXTITLE`,`oxid`.`oxattribute`.`OXPOS` AS `OXPOS`,`oxid`.`oxattribute`.`OXTIMESTAMP` AS `OXTIMESTAMP`,`oxid`.`oxattribute`.`OXDISPLAYINBASKET` AS `OXDISPLAYINBASKET` from `oxid`.`oxattribute`
+md5=ad37107768aeaa95b4dd4dd26960f73e
+updatable=1
+algorithm=0
+definer_user=oxid
+definer_host=%
+suid=0
+with_check_option=0
+timestamp=2024-09-05 12:52:36
+create-version=1
+source=SELECT oxattribute.OXID AS OXID,oxattribute.OXSHOPID AS OXSHOPID,oxattribute.OXTITLE AS OXTITLE,oxattribute.OXPOS AS OXPOS,oxattribute.OXTIMESTAMP AS OXTIMESTAMP,oxattribute.OXDISPLAYINBASKET AS OXDISPLAYINBASKET FROM oxattribute
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `oxid`.`oxattribute`.`OXID` AS `OXID`,`oxid`.`oxattribute`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxattribute`.`OXTITLE` AS `OXTITLE`,`oxid`.`oxattribute`.`OXPOS` AS `OXPOS`,`oxid`.`oxattribute`.`OXTIMESTAMP` AS `OXTIMESTAMP`,`oxid`.`oxattribute`.`OXDISPLAYINBASKET` AS `OXDISPLAYINBASKET` from `oxid`.`oxattribute`

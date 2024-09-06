@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `oxid`.`oxdiscount`.`OXID` AS `OXID`,`oxid`.`oxdiscount`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxdiscount`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxdiscount`.`OXACTIVEFROM` AS `OXACTIVEFROM`,`oxid`.`oxdiscount`.`OXACTIVETO` AS `OXACTIVETO`,`oxid`.`oxdiscount`.`OXTITLE` AS `OXTITLE`,`oxid`.`oxdiscount`.`OXTITLE_1` AS `OXTITLE_1`,`oxid`.`oxdiscount`.`OXTITLE_2` AS `OXTITLE_2`,`oxid`.`oxdiscount`.`OXTITLE_3` AS `OXTITLE_3`,`oxid`.`oxdiscount`.`OXAMOUNT` AS `OXAMOUNT`,`oxid`.`oxdiscount`.`OXAMOUNTTO` AS `OXAMOUNTTO`,`oxid`.`oxdiscount`.`OXPRICETO` AS `OXPRICETO`,`oxid`.`oxdiscount`.`OXPRICE` AS `OXPRICE`,`oxid`.`oxdiscount`.`OXADDSUMTYPE` AS `OXADDSUMTYPE`,`oxid`.`oxdiscount`.`OXADDSUM` AS `OXADDSUM`,`oxid`.`oxdiscount`.`OXITMARTID` AS `OXITMARTID`,`oxid`.`oxdiscount`.`OXITMAMOUNT` AS `OXITMAMOUNT`,`oxid`.`oxdiscount`.`OXITMMULTIPLE` AS `OXITMMULTIPLE`,`oxid`.`oxdiscount`.`OXSORT` AS `OXSORT`,`oxid`.`oxdiscount`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxdiscount`
+md5=db93966dbf15dd8c806c9ebcfcebd710
+updatable=1
+algorithm=0
+definer_user=oxid
+definer_host=%
+suid=0
+with_check_option=0
+timestamp=2024-09-05 12:52:36
+create-version=1
+source=SELECT oxdiscount.OXID,oxdiscount.OXSHOPID,oxdiscount.OXACTIVE,oxdiscount.OXACTIVEFROM,oxdiscount.OXACTIVETO,oxdiscount.OXTITLE,oxdiscount.OXTITLE_1,oxdiscount.OXTITLE_2,oxdiscount.OXTITLE_3,oxdiscount.OXAMOUNT,oxdiscount.OXAMOUNTTO,oxdiscount.OXPRICETO,oxdiscount.OXPRICE,oxdiscount.OXADDSUMTYPE,oxdiscount.OXADDSUM,oxdiscount.OXITMARTID,oxdiscount.OXITMAMOUNT,oxdiscount.OXITMMULTIPLE,oxdiscount.OXSORT,oxdiscount.OXTIMESTAMP FROM oxdiscount
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `oxid`.`oxdiscount`.`OXID` AS `OXID`,`oxid`.`oxdiscount`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxdiscount`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxdiscount`.`OXACTIVEFROM` AS `OXACTIVEFROM`,`oxid`.`oxdiscount`.`OXACTIVETO` AS `OXACTIVETO`,`oxid`.`oxdiscount`.`OXTITLE` AS `OXTITLE`,`oxid`.`oxdiscount`.`OXTITLE_1` AS `OXTITLE_1`,`oxid`.`oxdiscount`.`OXTITLE_2` AS `OXTITLE_2`,`oxid`.`oxdiscount`.`OXTITLE_3` AS `OXTITLE_3`,`oxid`.`oxdiscount`.`OXAMOUNT` AS `OXAMOUNT`,`oxid`.`oxdiscount`.`OXAMOUNTTO` AS `OXAMOUNTTO`,`oxid`.`oxdiscount`.`OXPRICETO` AS `OXPRICETO`,`oxid`.`oxdiscount`.`OXPRICE` AS `OXPRICE`,`oxid`.`oxdiscount`.`OXADDSUMTYPE` AS `OXADDSUMTYPE`,`oxid`.`oxdiscount`.`OXADDSUM` AS `OXADDSUM`,`oxid`.`oxdiscount`.`OXITMARTID` AS `OXITMARTID`,`oxid`.`oxdiscount`.`OXITMAMOUNT` AS `OXITMAMOUNT`,`oxid`.`oxdiscount`.`OXITMMULTIPLE` AS `OXITMMULTIPLE`,`oxid`.`oxdiscount`.`OXSORT` AS `OXSORT`,`oxid`.`oxdiscount`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxdiscount`

@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `oxid`.`oxwrapping`.`OXID` AS `OXID`,`oxid`.`oxwrapping`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxwrapping`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxwrapping`.`OXACTIVE_1` AS `OXACTIVE_1`,`oxid`.`oxwrapping`.`OXACTIVE_2` AS `OXACTIVE_2`,`oxid`.`oxwrapping`.`OXACTIVE_3` AS `OXACTIVE_3`,`oxid`.`oxwrapping`.`OXTYPE` AS `OXTYPE`,`oxid`.`oxwrapping`.`OXNAME` AS `OXNAME`,`oxid`.`oxwrapping`.`OXNAME_1` AS `OXNAME_1`,`oxid`.`oxwrapping`.`OXNAME_2` AS `OXNAME_2`,`oxid`.`oxwrapping`.`OXNAME_3` AS `OXNAME_3`,`oxid`.`oxwrapping`.`OXPIC` AS `OXPIC`,`oxid`.`oxwrapping`.`OXPRICE` AS `OXPRICE`,`oxid`.`oxwrapping`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxwrapping`
+md5=13edbd1633f7dbc5dd64dc822478a16f
+updatable=1
+algorithm=0
+definer_user=oxid
+definer_host=%
+suid=0
+with_check_option=0
+timestamp=2024-09-05 12:52:36
+create-version=1
+source=SELECT oxwrapping.OXID,oxwrapping.OXSHOPID,oxwrapping.OXACTIVE,oxwrapping.OXACTIVE_1,oxwrapping.OXACTIVE_2,oxwrapping.OXACTIVE_3,oxwrapping.OXTYPE,oxwrapping.OXNAME,oxwrapping.OXNAME_1,oxwrapping.OXNAME_2,oxwrapping.OXNAME_3,oxwrapping.OXPIC,oxwrapping.OXPRICE,oxwrapping.OXTIMESTAMP FROM oxwrapping
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `oxid`.`oxwrapping`.`OXID` AS `OXID`,`oxid`.`oxwrapping`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxwrapping`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxwrapping`.`OXACTIVE_1` AS `OXACTIVE_1`,`oxid`.`oxwrapping`.`OXACTIVE_2` AS `OXACTIVE_2`,`oxid`.`oxwrapping`.`OXACTIVE_3` AS `OXACTIVE_3`,`oxid`.`oxwrapping`.`OXTYPE` AS `OXTYPE`,`oxid`.`oxwrapping`.`OXNAME` AS `OXNAME`,`oxid`.`oxwrapping`.`OXNAME_1` AS `OXNAME_1`,`oxid`.`oxwrapping`.`OXNAME_2` AS `OXNAME_2`,`oxid`.`oxwrapping`.`OXNAME_3` AS `OXNAME_3`,`oxid`.`oxwrapping`.`OXPIC` AS `OXPIC`,`oxid`.`oxwrapping`.`OXPRICE` AS `OXPRICE`,`oxid`.`oxwrapping`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxwrapping`

@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `oxid`.`oxpayments`.`OXID` AS `OXID`,`oxid`.`oxpayments`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxpayments`.`OXDESC` AS `OXDESC`,`oxid`.`oxpayments`.`OXADDSUM` AS `OXADDSUM`,`oxid`.`oxpayments`.`OXADDSUMTYPE` AS `OXADDSUMTYPE`,`oxid`.`oxpayments`.`OXADDSUMRULES` AS `OXADDSUMRULES`,`oxid`.`oxpayments`.`OXFROMBONI` AS `OXFROMBONI`,`oxid`.`oxpayments`.`OXFROMAMOUNT` AS `OXFROMAMOUNT`,`oxid`.`oxpayments`.`OXTOAMOUNT` AS `OXTOAMOUNT`,`oxid`.`oxpayments`.`OXVALDESC` AS `OXVALDESC`,`oxid`.`oxpayments`.`OXCHECKED` AS `OXCHECKED`,`oxid`.`oxpayments`.`OXDESC_1` AS `OXDESC_1`,`oxid`.`oxpayments`.`OXVALDESC_1` AS `OXVALDESC_1`,`oxid`.`oxpayments`.`OXDESC_2` AS `OXDESC_2`,`oxid`.`oxpayments`.`OXVALDESC_2` AS `OXVALDESC_2`,`oxid`.`oxpayments`.`OXDESC_3` AS `OXDESC_3`,`oxid`.`oxpayments`.`OXVALDESC_3` AS `OXVALDESC_3`,`oxid`.`oxpayments`.`OXLONGDESC` AS `OXLONGDESC`,`oxid`.`oxpayments`.`OXLONGDESC_1` AS `OXLONGDESC_1`,`oxid`.`oxpayments`.`OXLONGDESC_2` AS `OXLONGDESC_2`,`oxid`.`oxpayments`.`OXLONGDESC_3` AS `OXLONGDESC_3`,`oxid`.`oxpayments`.`OXSORT` AS `OXSORT`,`oxid`.`oxpayments`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxpayments`
+md5=7c0c87765174bdfb07deb9af64f932eb
+updatable=1
+algorithm=0
+definer_user=oxid
+definer_host=%
+suid=0
+with_check_option=0
+timestamp=2024-09-05 12:52:36
+create-version=1
+source=SELECT oxpayments.OXID,oxpayments.OXACTIVE,oxpayments.OXDESC,oxpayments.OXADDSUM,oxpayments.OXADDSUMTYPE,oxpayments.OXADDSUMRULES,oxpayments.OXFROMBONI,oxpayments.OXFROMAMOUNT,oxpayments.OXTOAMOUNT,oxpayments.OXVALDESC,oxpayments.OXCHECKED,oxpayments.OXDESC_1,oxpayments.OXVALDESC_1,oxpayments.OXDESC_2,oxpayments.OXVALDESC_2,oxpayments.OXDESC_3,oxpayments.OXVALDESC_3,oxpayments.OXLONGDESC,oxpayments.OXLONGDESC_1,oxpayments.OXLONGDESC_2,oxpayments.OXLONGDESC_3,oxpayments.OXSORT,oxpayments.OXTIMESTAMP FROM oxpayments
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `oxid`.`oxpayments`.`OXID` AS `OXID`,`oxid`.`oxpayments`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxpayments`.`OXDESC` AS `OXDESC`,`oxid`.`oxpayments`.`OXADDSUM` AS `OXADDSUM`,`oxid`.`oxpayments`.`OXADDSUMTYPE` AS `OXADDSUMTYPE`,`oxid`.`oxpayments`.`OXADDSUMRULES` AS `OXADDSUMRULES`,`oxid`.`oxpayments`.`OXFROMBONI` AS `OXFROMBONI`,`oxid`.`oxpayments`.`OXFROMAMOUNT` AS `OXFROMAMOUNT`,`oxid`.`oxpayments`.`OXTOAMOUNT` AS `OXTOAMOUNT`,`oxid`.`oxpayments`.`OXVALDESC` AS `OXVALDESC`,`oxid`.`oxpayments`.`OXCHECKED` AS `OXCHECKED`,`oxid`.`oxpayments`.`OXDESC_1` AS `OXDESC_1`,`oxid`.`oxpayments`.`OXVALDESC_1` AS `OXVALDESC_1`,`oxid`.`oxpayments`.`OXDESC_2` AS `OXDESC_2`,`oxid`.`oxpayments`.`OXVALDESC_2` AS `OXVALDESC_2`,`oxid`.`oxpayments`.`OXDESC_3` AS `OXDESC_3`,`oxid`.`oxpayments`.`OXVALDESC_3` AS `OXVALDESC_3`,`oxid`.`oxpayments`.`OXLONGDESC` AS `OXLONGDESC`,`oxid`.`oxpayments`.`OXLONGDESC_1` AS `OXLONGDESC_1`,`oxid`.`oxpayments`.`OXLONGDESC_2` AS `OXLONGDESC_2`,`oxid`.`oxpayments`.`OXLONGDESC_3` AS `OXLONGDESC_3`,`oxid`.`oxpayments`.`OXSORT` AS `OXSORT`,`oxid`.`oxpayments`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxpayments`

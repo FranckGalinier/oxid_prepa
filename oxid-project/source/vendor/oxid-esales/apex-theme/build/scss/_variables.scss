@@ -1,0 +1,140 @@
+//
+// Theme Variables
+// --------------------------------------------------
+
+$font-family-base: 'Roboto', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$headings-font-family: 'Oswald', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$headings-font-weight: 600;
+$font-size-base: 1rem;
+$line-height-base: 1.5;
+$legend-font-size: 1.2rem;
+$breadcrumb-font-size: 0.875rem;
+$breadcrumb-margin-bottom: 0;
+
+$grid-gutter-width:           0.625rem;
+$spacer: $grid-gutter-width;
+$container-padding-x: $grid-gutter-width;
+
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.125;
+$h6-font-size:                $font-size-base;
+
+$font-family-price: $headings-font-family;
+$headings-margin-bottom: 2 * $spacer;
+
+$primary: #000;
+$secondary: #fff;
+$highlight: #548E96;
+$success: #28a745;
+$danger: #dc3545;
+$warning: #ffc107;
+$info: #17a2b8;
+$light: #E2E7EA;
+
+$tag-bg: #E2E7EA;
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  'highlight':  $highlight
+);
+
+$body-color: #000;
+$body-bg: #EAECED;
+
+$rfs-base-value: 0.7rem;
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-caret:                false;
+$enable-rounded:              false;
+$enable-shadows:              true;
+$enable-gradients:            false;
+$enable-transitions:          true;
+$enable-reduced-motion:       true;
+$enable-smooth-scroll:        true;
+$enable-grid-classes:         true;
+$enable-cssgrid:              false;
+$enable-button-pointers:      true;
+$enable-rfs:                  true;
+$enable-validation-icons:     true;
+$enable-negative-margins:     false;
+$enable-deprecation-messages: true;
+$enable-important-utilities:  true;
+
+/// Grid
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1700px
+);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1620px
+);
+
+/// Buttons
+$btn-box-shadow: 0;
+
+/// Header
+$ox-header-bg: #fff;
+$ox-header-color: #000;
+$ox-header-link-color: #000;
+
+$ox-meta-bg: #6A7281;
+$ox-meta-color: #fff;
+$ox-meta-link-color: #fff;
+
+$dropdown-border-color: #fff;
+
+/// Footer
+$ox-footer-bg: #474C58;
+$ox-footer-color: #C7CBD0;
+$ox-footer-link-color: #C7CBD0;
+
+/// Ratings
+$ox-rating-star-filled-color: $warning;
+$ox-rating-star-empty-color: $secondary;
+
+/// Forms
+$input-bg: #EFF1F2;
+$input-border-color: $input-bg;
+$input-box-shadow: 0;
+$form-label-margin-bottom:              .25rem;
+$form-label-font-size:                  12px;
+$form-label-color:                      #6A7281;
+$form-select-box-shadow: 0;
+
+
+/// Cards
+$card-bg: #fff;
+$card-border-width: 0;
+$card-cap-bg: $card-bg;
+
+//
+// OXID Variables
+// --------------------------------------------------
+$rating-star-color: #000;
+
+//
+// OXID Functions
+// --------------------------------------------------
+
+$details-ratings: true;
+$list-view: false;
+$grid-view: true;
+
+

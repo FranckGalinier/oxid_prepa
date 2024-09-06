@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `oxid`.`oxcontents`.`OXID` AS `OXID`,`oxid`.`oxcontents`.`OXLOADID` AS `OXLOADID`,`oxid`.`oxcontents`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxcontents`.`OXSNIPPET` AS `OXSNIPPET`,`oxid`.`oxcontents`.`OXTYPE` AS `OXTYPE`,`oxid`.`oxcontents`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxcontents`.`OXACTIVE_1` AS `OXACTIVE_1`,`oxid`.`oxcontents`.`OXPOSITION` AS `OXPOSITION`,`oxid`.`oxcontents`.`OXTITLE` AS `OXTITLE`,`oxid`.`oxcontents`.`OXCONTENT` AS `OXCONTENT`,`oxid`.`oxcontents`.`OXTITLE_1` AS `OXTITLE_1`,`oxid`.`oxcontents`.`OXCONTENT_1` AS `OXCONTENT_1`,`oxid`.`oxcontents`.`OXACTIVE_2` AS `OXACTIVE_2`,`oxid`.`oxcontents`.`OXTITLE_2` AS `OXTITLE_2`,`oxid`.`oxcontents`.`OXCONTENT_2` AS `OXCONTENT_2`,`oxid`.`oxcontents`.`OXACTIVE_3` AS `OXACTIVE_3`,`oxid`.`oxcontents`.`OXTITLE_3` AS `OXTITLE_3`,`oxid`.`oxcontents`.`OXCONTENT_3` AS `OXCONTENT_3`,`oxid`.`oxcontents`.`OXCATID` AS `OXCATID`,`oxid`.`oxcontents`.`OXFOLDER` AS `OXFOLDER`,`oxid`.`oxcontents`.`OXTERMVERSION` AS `OXTERMVERSION`,`oxid`.`oxcontents`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxcontents`
+md5=a20b3548f7074906980b51669c09ff19
+updatable=1
+algorithm=0
+definer_user=oxid
+definer_host=%
+suid=0
+with_check_option=0
+timestamp=2024-09-05 12:52:36
+create-version=1
+source=SELECT oxcontents.OXID,oxcontents.OXLOADID,oxcontents.OXSHOPID,oxcontents.OXSNIPPET,oxcontents.OXTYPE,oxcontents.OXACTIVE,oxcontents.OXACTIVE_1,oxcontents.OXPOSITION,oxcontents.OXTITLE,oxcontents.OXCONTENT,oxcontents.OXTITLE_1,oxcontents.OXCONTENT_1,oxcontents.OXACTIVE_2,oxcontents.OXTITLE_2,oxcontents.OXCONTENT_2,oxcontents.OXACTIVE_3,oxcontents.OXTITLE_3,oxcontents.OXCONTENT_3,oxcontents.OXCATID,oxcontents.OXFOLDER,oxcontents.OXTERMVERSION,oxcontents.OXTIMESTAMP FROM oxcontents
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `oxid`.`oxcontents`.`OXID` AS `OXID`,`oxid`.`oxcontents`.`OXLOADID` AS `OXLOADID`,`oxid`.`oxcontents`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxcontents`.`OXSNIPPET` AS `OXSNIPPET`,`oxid`.`oxcontents`.`OXTYPE` AS `OXTYPE`,`oxid`.`oxcontents`.`OXACTIVE` AS `OXACTIVE`,`oxid`.`oxcontents`.`OXACTIVE_1` AS `OXACTIVE_1`,`oxid`.`oxcontents`.`OXPOSITION` AS `OXPOSITION`,`oxid`.`oxcontents`.`OXTITLE` AS `OXTITLE`,`oxid`.`oxcontents`.`OXCONTENT` AS `OXCONTENT`,`oxid`.`oxcontents`.`OXTITLE_1` AS `OXTITLE_1`,`oxid`.`oxcontents`.`OXCONTENT_1` AS `OXCONTENT_1`,`oxid`.`oxcontents`.`OXACTIVE_2` AS `OXACTIVE_2`,`oxid`.`oxcontents`.`OXTITLE_2` AS `OXTITLE_2`,`oxid`.`oxcontents`.`OXCONTENT_2` AS `OXCONTENT_2`,`oxid`.`oxcontents`.`OXACTIVE_3` AS `OXACTIVE_3`,`oxid`.`oxcontents`.`OXTITLE_3` AS `OXTITLE_3`,`oxid`.`oxcontents`.`OXCONTENT_3` AS `OXCONTENT_3`,`oxid`.`oxcontents`.`OXCATID` AS `OXCATID`,`oxid`.`oxcontents`.`OXFOLDER` AS `OXFOLDER`,`oxid`.`oxcontents`.`OXTERMVERSION` AS `OXTERMVERSION`,`oxid`.`oxcontents`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxcontents`

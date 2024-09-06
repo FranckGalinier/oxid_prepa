@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `oxid`.`oxselectlist`.`OXID` AS `OXID`,`oxid`.`oxselectlist`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxselectlist`.`OXTITLE_1` AS `OXTITLE`,`oxid`.`oxselectlist`.`OXIDENT` AS `OXIDENT`,`oxid`.`oxselectlist`.`OXVALDESC_1` AS `OXVALDESC`,`oxid`.`oxselectlist`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxselectlist`
+md5=c408933e1f4607e15fff7c04d9049455
+updatable=1
+algorithm=0
+definer_user=oxid
+definer_host=%
+suid=0
+with_check_option=0
+timestamp=2024-09-05 12:52:36
+create-version=1
+source=SELECT oxselectlist.OXID AS OXID,oxselectlist.OXSHOPID AS OXSHOPID,oxselectlist.OXTITLE_1 AS OXTITLE,oxselectlist.OXIDENT AS OXIDENT,oxselectlist.OXVALDESC_1 AS OXVALDESC,oxselectlist.OXTIMESTAMP AS OXTIMESTAMP FROM oxselectlist
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `oxid`.`oxselectlist`.`OXID` AS `OXID`,`oxid`.`oxselectlist`.`OXSHOPID` AS `OXSHOPID`,`oxid`.`oxselectlist`.`OXTITLE_1` AS `OXTITLE`,`oxid`.`oxselectlist`.`OXIDENT` AS `OXIDENT`,`oxid`.`oxselectlist`.`OXVALDESC_1` AS `OXVALDESC`,`oxid`.`oxselectlist`.`OXTIMESTAMP` AS `OXTIMESTAMP` from `oxid`.`oxselectlist`

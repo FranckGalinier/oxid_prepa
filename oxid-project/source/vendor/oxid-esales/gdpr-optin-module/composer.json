@@ -1,0 +1,55 @@
+{
+  "name": "oxid-esales/gdpr-optin-module",
+  "description": "This is the GDPR opt-in module for the OXID eShop.",
+  "type": "oxideshop-module",
+  "keywords": [
+      "oxid",
+      "modules",
+      "eShop"
+  ],
+  "homepage": "https://www.oxid-esales.com",
+  "license": [
+    "proprietary"
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "prefer-dist": true,
+  "require": {
+    "php": "^8.0 | ^8.1",
+    "symfony/filesystem": "*"
+  },
+  "require-dev": {
+      "phpstan/phpstan": "^1.8.11",
+      "squizlabs/php_codesniffer": "3.*",
+      "phpmd/phpmd": "^2.11",
+      "oxid-esales/oxideshop-ce": "dev-b-7.0.x"
+  },
+  "conflict": {
+      "oxid-esales/oxideshop-ce": "<7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "OxidEsales\\GdprOptinModule\\": "src/",
+      "OxidEsales\\GdprOptinModule\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+      "phpcs": "phpcs --standard=tests/phpcs.xml",
+      "phpcbf": "phpcbf --standard=tests/phpcs.xml",
+      "phpstan": "phpstan -ctests/PhpStan/phpstan.neon analyse src/",
+      "phpstan-report": "phpstan -ctests/PhpStan/phpstan.neon analyse src/ --error-format=json > phpstan.report.json",
+      "phpmd": "phpmd src text cleancode,codesize,design,naming,unusedcode",
+      "phpmd-report": "phpmd src json cleancode,codesize,design,naming,unusedcode --reportfile phpmd.report.json",
+      "static": [
+          "@phpcs",
+          "@phpstan",
+          "@phpmd"
+      ]
+  },
+  "config": {
+      "allow-plugins": {
+          "oxid-esales/oxideshop-composer-plugin": true,
+          "oxid-esales/oxideshop-unified-namespace-generator": true
+      }
+  }
+}
